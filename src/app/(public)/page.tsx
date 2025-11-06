@@ -17,7 +17,7 @@ export default function Home() {
               An overlay for your livestreams or website which shows your current Movember progress, updating every 30 seconds.
             </Text>
             <Link href="/overlay" style={{ textDecoration: 'none' }}>
-              <Button color="white" variant="outline" fullWidth mt="md" radius="md">
+              <Button color="white" variant="outline" fullWidth mt="md" radius="lg">
                 Setup Movember Overlay
               </Button>
             </Link>
