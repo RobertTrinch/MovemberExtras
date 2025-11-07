@@ -11,8 +11,6 @@ export default function Home() {
   const [mospaceId, setMospaceId] = useState("");
   const [theme, setTheme] = useState("default");
 
-
-
   return (
     <>
       <Heading />
@@ -38,7 +36,7 @@ export default function Home() {
           value={mospaceId}
           onChange={(event) => setMospaceId(event.currentTarget.value)}
         />
-        <NativeSelect radius="xl" mt="sm" label="Your Theme" data={['default', 'blue']} value={theme} onChange={(event) => setTheme(event.currentTarget.value)}/>
+        <NativeSelect radius="xl" mt="sm" label="Your Theme" data={['default', 'blue']} value={theme} onChange={(event) => setTheme(event.currentTarget.value)} />
         <Link href={mospaceId ? `/overlay/${mospaceId}/${theme}` : '#'} style={{ textDecoration: 'none' }}>
           <Button variant="white" c="black" fullWidth radius="xl" mt="md">
             Start Overlay
