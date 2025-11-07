@@ -1,11 +1,11 @@
 import { fetchMemberMovemberData } from '@/helpers/MovemberApiHelper'
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(
-  request: Request,
-  { params }: { params: { id: string } }
+  _request: NextRequest,
+  context: { params: Promise<{ id: string }> }
 ) {
-  const { id } = await params
+  const { id } = await context.params
   const data = await fetchMemberMovemberData(id)
 
   if (data === null) {

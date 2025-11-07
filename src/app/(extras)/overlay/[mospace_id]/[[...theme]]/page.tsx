@@ -32,7 +32,7 @@ export default async function Page({ params }: { params: Promise<{ theme: string
 
   } else {
     return (
-      <h1>error</h1>
+      <h1 style={{ color: 'white', backgroundColor: 'rgba(0,0,0,0.5)', padding: '12px', borderRadius: '4px', fontFamily: 'Arial, sans-serif' }}>An error occurred fetching the profile, did you put in the correct ID?</h1>
     )
   }
 }

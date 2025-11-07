@@ -23,7 +23,7 @@ export default function GoalOverlayPage_Default({
     return () => clearInterval(interval)
   }, [mospaceId])
 
-  if (data === null) return <h1>Loading...</h1>
+  if (data === null || data === undefined) return <h1>Loading..</h1>
 
   return <>
     <div className={styles.goalContainer}>

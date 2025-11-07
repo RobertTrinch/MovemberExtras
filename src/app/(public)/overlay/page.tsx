@@ -37,7 +37,7 @@ export default function Home() {
           onChange={(event) => setMospaceId(event.currentTarget.value)}
         />
         <NativeSelect radius='xl' mt='sm' label='Your Theme' data={['default', 'blue']} value={theme} onChange={(event) => setTheme(event.currentTarget.value)} />
-        <Link href={mospaceId === '' ? `/overlay/${mospaceId}/${theme}` : '#'} style={{ textDecoration: 'none' }}>
+        <Link href={mospaceId.length !== 0 ? `/overlay/${mospaceId}/${theme}` : '#'} style={{ textDecoration: 'none' }}>
           <Button variant='white' c='black' fullWidth radius='xl' mt='md'>
             Start Overlay
           </Button>
