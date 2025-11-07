@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import { useEffect, useState } from "react"
-import { MovemberMember } from "@/interfaces/MovemberMember";
-import { fetchMemberData } from "@/helpers/ApiHelper";
-import styles from "./GoalOverlay_blue.module.scss"
+import { useEffect, useState } from 'react'
+import { MovemberMember } from '@/interfaces/MovemberMember'
+import { fetchMemberData } from '@/helpers/ApiHelper'
+import styles from './GoalOverlay_blue.module.scss'
 
 export default function GoalOverlayPage_Blue({
   mospaceId,
@@ -23,7 +23,7 @@ export default function GoalOverlayPage_Blue({
     return () => clearInterval(interval)
   }, [mospaceId])
 
-  if (!data) return <h1>Loading...</h1>
+  if (data === null) return <h1>Loading...</h1>
 
   return <>
     <div className={styles.goalContainer}>
