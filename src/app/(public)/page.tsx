@@ -1,3 +1,5 @@
+"use client";
+
 import { Footer } from "@/components/Footer";
 import { Heading } from "@/components/Heading";
 import { Button, Card, Container, SimpleGrid, Group, Text } from "@mantine/core";
@@ -11,14 +13,14 @@ export default function Home() {
         <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }}>
           <Card shadow="md" padding="md" radius="lg" withBorder>
             <Group justify="space-between" mt="xs">
-              <Text fw={500}>Movember Overlay</Text>
+              <Text fw={500}>Goal Overlay</Text>
             </Group>
             <Text size="sm" c="dimmed" ta="start">
-              An overlay for your livestreams or website which shows your current Movember progress, updating every 30 seconds.
+              An overlay for your livestreams or website which shows your current goal progress, updating every 30 seconds.
             </Text>
             <Link href="/overlay" style={{ textDecoration: 'none' }}>
               <Button color="white" variant="outline" fullWidth mt="md" radius="lg">
-                Setup Movember Overlay
+                Setup Goal Overlay
               </Button>
             </Link>
           </Card>

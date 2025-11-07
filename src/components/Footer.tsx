@@ -4,7 +4,7 @@ import Link from "next/link";
 export function Footer() {
     return <>
     <Container ta="center">
-        <Text size="sm" c="dimmed" mt="xl" mb="md">
+        <Text size="sm" c="dimmed" mt="xl" mb={0}>
           <Link href="https://movember.com/m/roberttrinch" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'dimgray', paddingRight: '30px' }}>
             Donate to Movember
           </Link>
@@ -12,6 +12,9 @@ export function Footer() {
             GitHub Page
           </Link>
         </Text>
+        <Text size="sm" c="dimmed" mt="xs" mb={20}>
+          © {new Date().getFullYear()} - This website is not affiliated with Movember.
+          </Text>
       </Container>
     </>
 }

@@ -1,0 +1,88 @@
+.goalContainer {
+    padding-left: 10px;
+}
+
+.progressBar {
+    width: 500px;
+    height: 40px;
+    appearance: none;
+
+    /* Chrome and Safari */
+    &::-webkit-progress-bar {
+        background: rgb(49, 49, 49);
+        border-radius: 100px;
+    }
+
+    &::-webkit-progress-value {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100px;
+        transition: width 1s;
+    }
+
+    // subtle elevation for the whole control
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.65);
+    border-radius: 100px;
+    overflow: visible;
+
+    /* Firefox */
+    &::-moz-progress-bar {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100px;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.65);
+    }
+
+    // add this class to trigger a 1s flash to green and back
+    &.flash-green {
+        &::-webkit-progress-value {
+            -webkit-animation: flash-green 1s ease-in-out;
+            animation: flash-green 1s ease-in-out;
+            animation-fill-mode: none;
+        }
+
+        &::-moz-progress-bar {
+            -webkit-animation: flash-green 1s ease-in-out;
+            animation: flash-green 1s ease-in-out;
+            animation-fill-mode: none;
+        }
+    }
+}
+
+/* keyframes for the flash */
+@-webkit-keyframes flash-green {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    50% {
+        background-color: rgb(0, 200, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes flash-green {
+    0% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    50% {
+        background-color: rgb(0, 200, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.goalText {
+    color: white;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 500px;
+    font-family: Arial, sans-serif;
+}

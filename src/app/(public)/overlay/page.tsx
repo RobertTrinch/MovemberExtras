@@ -1,10 +1,18 @@
+"use client";
+
 import { Footer } from "@/components/Footer";
 import { Heading } from "@/components/Heading";
-import { Container, Title, Text, Button, TextInput } from "@mantine/core";
+import { Container, Title, Text, Button, TextInput, NativeSelect } from "@mantine/core";
 import { IconArrowBack } from "@tabler/icons-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [mospaceId, setMospaceId] = useState("");
+  const [theme, setTheme] = useState("default");
+
+
+
   return (
     <>
       <Heading />
@@ -27,10 +35,16 @@ export default function Home() {
           withAsterisk
           description="This can be found in your sharing link (e.g., https://ie.movember.com/mo-space/yourID)"
           placeholder="Eg. 15270946"
+          value={mospaceId}
+          onChange={(event) => setMospaceId(event.currentTarget.value)}
         />
-        <Button variant="white" c="black" fullWidth radius="xl" mt="md">
-          Start Overlay
-        </Button>
+        <NativeSelect radius="xl" mt="sm" label="Your Theme" data={['default', 'blue']} value={theme} onChange={(event) => setTheme(event.currentTarget.value)}/>
+        <Link href={mospaceId ? `/overlay/${mospaceId}/${theme}` : '#'} style={{ textDecoration: 'none' }}>
+          <Button variant="white" c="black" fullWidth radius="xl" mt="md">
+            Start Overlay
+          </Button>
+        </Link>
+
       </Container>
       <Container pt="md">
         <Title order={3} c="white">How to Setup</Title>
