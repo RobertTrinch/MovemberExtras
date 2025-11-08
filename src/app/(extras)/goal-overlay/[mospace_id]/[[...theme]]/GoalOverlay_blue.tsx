@@ -23,7 +23,7 @@ export default function GoalOverlayPage_Blue({
     return () => clearInterval(interval)
   }, [mospaceId])
 
-  if (data === null || data === undefined) return <h1>Loading..</h1>
+  if (data === null || data === undefined || data.AmountRaised === null || data.AmountRaised === undefined) return <h1 style={{ color: 'white', backgroundColor: 'rgba(0,0,0,0.5)', padding: '12px', borderRadius: '4px', fontFamily: 'Arial, sans-serif' }}>Movember User not found, did you put in the correct ID?</h1>
 
   return <>
     <div className={styles.goalContainer}>
