@@ -2,7 +2,7 @@
 
 import { Footer } from '@/components/Footer'
 import { Heading } from '@/components/Heading'
-import { Container, Title, Text, Button, TextInput, NativeSelect } from '@mantine/core'
+import { Container, Title, Text, Button, TextInput } from '@mantine/core'
 import { IconArrowBack } from '@tabler/icons-react'
 import Link from 'next/link'
 import { useState } from 'react'
