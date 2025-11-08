@@ -1,7 +1,7 @@
 import axios from 'axios'
 import type { MovemberMember } from '../interfaces/MovemberMember'
 
-const apiBaseUrl = 'http://localhost:3000/api/movember-member/'
+const apiBaseUrl = '/api/movember-member/'
 
 export async function fetchMemberData(movemberId: string): Promise<MovemberMember> {
   const { data, status, statusText } = await axios.get<MovemberMember>(`${apiBaseUrl}${movemberId}`, {
