@@ -3,7 +3,7 @@ import { ColorSchemeScript, MantineProvider, createTheme, mantineHtmlProps } fro
 
 export const metadata = {
   title: 'Movember Extras',
-  description: 'A collection of extra features to help fundraise for Movember',
+  description: 'MoExtras: A collection of extra features to help fundraise for Movember',
 }
 
 const theme = createTheme({

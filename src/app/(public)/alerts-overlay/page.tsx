@@ -7,6 +7,11 @@ import { IconArrowBack } from '@tabler/icons-react'
 import Link from 'next/link'
 import { useState } from 'react'
 
+export const metadata = {
+  title: 'Movember Extras - Alerts Overlay',
+  description: 'MoExtras: A collection of extra features to help fundraise for Movember',
+}
+
 export default function Home() {
   const [mospaceId, setMospaceId] = useState('')
 
