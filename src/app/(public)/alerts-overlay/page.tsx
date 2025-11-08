@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Heading } from '@/components/Heading'
 import { Container, Title, Text, Button, TextInput } from '@mantine/core'
 import { IconArrowBack } from '@tabler/icons-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -43,7 +44,9 @@ export default function Home() {
 
       </Container>
       <Container pt='md'>
-        <Title order={3} c='white'>How to Setup</Title>
+        <Title order={3} c='white' pb="0">Alert Example</Title>
+        <Image src='/alertsoverlay_demo.gif' alt='Alerts Example' width={550} height={450} style={{ marginTop: '20px', borderRadius: '10px' }} />
+        <Title order={3} c='white' pt="md">How to Setup</Title>
         <Text size='md' c='dimmed' mb='lg'>
           Once you have your Movember Number ID, click &quot;Start Overlay&quot; to generate your personalised overlay link. You can then copy and add this link as a browser source in your streaming software (like OBS) or embed it on your website to have alerts in real-time.
         </Text>
