@@ -1,6 +1,8 @@
 name: ESLint on Push
 
 on: [push]
+permissions:
+  contents: read
 
 jobs:
   lint:
