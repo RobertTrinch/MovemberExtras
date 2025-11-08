@@ -7,7 +7,7 @@ export default async function Page({ params }: { params: Promise<{ theme: string
   const { theme, mospace_id } = await params
   const request = await fetchMemberMovemberData(mospace_id)
   if (request !== undefined) {
-    console.log(theme)
+    console.log('Rendering Goal overlay for ' + mospace_id + ' - ' + request.fullName)
     if(theme === null || theme === undefined) {
       return (
         <GoalOverlayPage mospaceId={mospace_id} initialData={request} />

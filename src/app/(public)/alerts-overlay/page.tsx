@@ -9,7 +9,6 @@ import { useState } from 'react'
 
 export default function Home() {
   const [mospaceId, setMospaceId] = useState('')
-  const [theme, setTheme] = useState('default')
 
   return (
     <>
@@ -20,9 +19,9 @@ export default function Home() {
             Go back
           </Button>
         </Link>
-        <Title order={2} c='white'>Goal Overlay</Title>
+        <Title order={2} c='white'>Alerts Overlay</Title>
         <Text size='md' c='dimmed'>
-          An overlay for your livestreams or website which shows your current Movember progress, updating every 30 seconds.
+          An overlay for your livestreams which shows live alerts for any donations received, updating in real-time.
         </Text>
       </Container>
       <Container pt='md'>
@@ -36,8 +35,7 @@ export default function Home() {
           value={mospaceId}
           onChange={(event) => setMospaceId(event.currentTarget.value)}
         />
-        <NativeSelect radius='xl' mt='sm' label='Your Theme' data={['default', 'blue']} value={theme} onChange={(event) => setTheme(event.currentTarget.value)} />
-        <Link href={mospaceId.length !== 0 ? `/goal-overlay/${mospaceId}/${theme}` : '#'} style={{ textDecoration: 'none' }}>
+        <Link href={mospaceId.length !== 0 ? `/alerts-overlay/${mospaceId}` : '#'} style={{ textDecoration: 'none' }}>
           <Button variant='white' c='black' fullWidth radius='xl' mt='md'>
             Start Overlay
           </Button>
@@ -47,7 +45,7 @@ export default function Home() {
       <Container pt='md'>
         <Title order={3} c='white'>How to Setup</Title>
         <Text size='md' c='dimmed' mb='lg'>
-          Once you have your Movember Number ID, click &quot;Start Overlay&quot; to generate your personalised overlay link. You can then copy and add this link as a browser source in your streaming software (like OBS) or embed it on your website to showcase your Movember progress in real-time.
+          Once you have your Movember Number ID, click &quot;Start Overlay&quot; to generate your personalised overlay link. You can then copy and add this link as a browser source in your streaming software (like OBS) or embed it on your website to have alerts in real-time.
         </Text>
       </Container>
       <Footer />

@@ -26,8 +26,16 @@ export default function Home() {
           </Card>
           <Card shadow='md' padding='md' radius='lg' withBorder>
             <Group justify='space-between' mt='xs'>
-              <Text fw={500}>Coming soon..</Text>
+              <Text fw={500}>Alerts Overlay</Text>
             </Group>
+            <Text size='sm' c='dimmed' ta='start'>
+              An overlay for your livestreams which shows live alerts for any donations received to your Mo Space, updating in real-time.
+            </Text>
+            <Link href='/alerts-overlay' style={{ textDecoration: 'none' }}>
+              <Button color='white' variant='outline' fullWidth mt='md' radius='lg'>
+                Setup Alerts Overlay
+              </Button>
+            </Link>
           </Card>
           <Card shadow='md' padding='md' radius='lg' withBorder>
             <Group justify='space-between' mt='xs'>
