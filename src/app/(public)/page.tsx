@@ -18,7 +18,7 @@ export default function Home() {
             <Text size='sm' c='dimmed' ta='start'>
               An overlay for your livestreams or website which shows your current goal progress, updating every 30 seconds.
             </Text>
-            <Link href='/overlay' style={{ textDecoration: 'none' }}>
+            <Link href='/goal-overlay' style={{ textDecoration: 'none' }}>
               <Button color='white' variant='outline' fullWidth mt='md' radius='lg'>
                 Setup Goal Overlay
               </Button>
