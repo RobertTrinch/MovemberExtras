@@ -31,7 +31,6 @@ export default function RootLayout({
         <meta property="twitter:description" content="MoExtras: A collection of extra features to help fundraise for Movember, such as Alerts Overlay and Goal Progress!" />
         <meta property="twitter:image" content="https://moextras.trinch.net/apple-touch-icon.png" />
         <meta name="keywords" content="movember,movemberextras,moextras,movember extras,movember overlays" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="language" content="English" />
         <ColorSchemeScript />
       </head>
