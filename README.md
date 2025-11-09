@@ -1,6 +1,6 @@
-![Movember Logo](https://raw.githubusercontent.com/RobertTrinch/MovemberExtras/5f7ecb3a784dc1c996ed01c4375c5e5b5a0d3d57/public/mo_icon_white.png)
-<h1 align="center">Movember Extras</h1>
-<p align="center">A collection of extra features to help fundraise for Movember!</p>
+![Movember Logo](https://github.com/RobertTrinch/MovemberExtras/blob/master/public/android-chrome-192x192.png?raw=true)
+# Movember Extras
+A collection of extra features to help fundraise for Movember! (Not affiliated by Movember)
 
 ## Features
 - Goal Overlay (via Mo Space)
