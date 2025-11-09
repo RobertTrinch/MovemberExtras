@@ -1,5 +1,7 @@
 import '@mantine/core/styles.css'
 import { ColorSchemeScript, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: 'Movember Extras',
@@ -33,6 +35,8 @@ export default function RootLayout({
         <meta name="keywords" content="movember,movemberextras,moextras,movember extras,movember overlays" />
         <meta name="language" content="English" />
         <ColorSchemeScript />
+        <SpeedInsights />
+        <Analytics />
       </head>
       <body>
         <MantineProvider forceColorScheme='dark' theme={theme}>{children}</MantineProvider>
