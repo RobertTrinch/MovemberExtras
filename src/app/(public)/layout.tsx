@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
+        <ColorSchemeScript />
         <title>Movember Extras</title>
         <meta name="title" content="Movember Extras" />
         <meta name="description" content="MoExtras: A collection of extra features to help fundraise for Movember, such as Alerts Overlay and Goal Progress!" />
@@ -34,12 +35,11 @@ export default function RootLayout({
         <meta property="twitter:image" content="https://moextras.trinch.net/apple-touch-icon.png" />
         <meta name="keywords" content="movember,movemberextras,moextras,movember extras,movember overlays" />
         <meta name="language" content="English" />
-        <ColorSchemeScript />
-        <SpeedInsights />
-        <Analytics />
       </head>
       <body>
         <MantineProvider forceColorScheme='dark' theme={theme}>{children}</MantineProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )

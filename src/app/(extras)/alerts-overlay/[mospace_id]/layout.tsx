@@ -9,11 +9,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <SpeedInsights />
-        <Analytics />
       </head>
       <body>
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
