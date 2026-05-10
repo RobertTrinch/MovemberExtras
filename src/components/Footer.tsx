@@ -13,7 +13,7 @@ export function Footer() {
         </Link>
       </Text>
       <Text size='sm' c='dimmed' mt='xs' mb={20}>
-        © {new Date().getFullYear()} - This website is not affiliated with Movember.
+        © {new Date().getFullYear()} Trinch Studio - This website is not affiliated with Movember.
       </Text>
     </Container>
   </>
