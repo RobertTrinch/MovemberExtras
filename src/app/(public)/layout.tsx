@@ -4,12 +4,12 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 
-const description = 'MoExtras: A collection of extra features to help fundraise for Movember, such a Movember Alert Overlay and Goal Progress Overlay'
+const description = 'MoExtras: A collection of extra features to help fundraise for Movember, such as a Movember Alert Overlay and Goal Progress Overlay'
 
 export const metadata: Metadata = {
   title: 'Movember Extras',
   description,
-  keywords: ['movember', 'movemberextras', 'moextras', 'movember extras', 'movember overlays'],
+  keywords: ['movember', 'movemberextras', 'moextras', 'movember extras', 'movember overlays', 'movember alerts', 'movember alert overlay', 'movember goal overlay', 'movember obs'],
   openGraph: {
     type: 'website',
     url: 'https://moextras.trinch.net',
