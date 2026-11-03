@@ -39,8 +39,11 @@ export default function Home() {
           </Card>
           <Card shadow='md' padding='md' radius='lg' withBorder>
             <Group justify='space-between' mt='xs'>
-              <Text fw={500}>Coming soon..</Text>
+              <Text fw={500}>Have a suggestion?</Text>
             </Group>
+            <Text size='sm' c='dimmed' ta='start'>
+              Whether it's a theme idea or a whole new feature, send me an email at <Link href="mailto:hello@trinch.net" style={{textDecoration: 'none'}}>hello@trinch.net</Link>!
+            </Text>
           </Card>
         </SimpleGrid>
       </Container>
